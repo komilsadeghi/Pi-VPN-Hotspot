@@ -2,6 +2,9 @@
 
 Turn your Raspberry Pi into a **WiFi VPN hotspot**. Any device that connects to the Pi's WiFi will have its traffic automatically routed through a VLESS proxy.
 
+
+#### Don't forget to extract xray in xray folder
+
 ## What It Does
 
 - Creates a WiFi hotspot (`PiVPN_Hotspot`)
