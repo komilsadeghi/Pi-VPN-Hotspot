@@ -193,4 +193,4 @@ sudo systemctl start xray-proxy
 
 ## License
 
-Open source. Use freely.
+MIT License
