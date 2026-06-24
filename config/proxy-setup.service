@@ -1,0 +1,12 @@
+[Unit]
+Description=Setup proxy and hotspot after boot
+After=network.target hostapd.service dnsmasq.service NetworkManager.service
+Wants=hostapd.service dnsmasq.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /usr/local/bin/proxy-setup.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

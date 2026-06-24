@@ -1,0 +1,13 @@
+[Unit]
+Description=Xray Transparent Proxy
+After=network.target proxy-setup.service
+Requires=proxy-setup.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/share/xray/xray run -c /etc/xray/config.json
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

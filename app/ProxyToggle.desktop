@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Proxy Toggle
+Comment=Toggle VPN Proxy
+Exec=python3 /home/pi/Desktop/proxy_toggle.pyw
+Icon=preferences-system-network
+Terminal=false
+Type=Application
+Categories=Utility;
