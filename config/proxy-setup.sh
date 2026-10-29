@@ -33,8 +33,8 @@ iptables -t nat -A PREROUTING -i wlan0 -p udp --dport 53 -j REDIRECT --to-ports 
 # OUTPUT: redirect Pi own traffic to xray
 iptables -t nat -A OUTPUT -d 192.168.4.1/32 -j RETURN
 iptables -t nat -A OUTPUT -d 127.0.0.0/8 -j RETURN
-iptables -t nat -A OUTPUT -p tcp --dport 12345 -j RETURN
-iptables -t nat -A OUTPUT -p tcp --dport 10808 -j RETURN
+iptables -t nat -A OUTPUT -p tcp --dport 54321 -j RETURN
+iptables -t nat -A OUTPUT -p tcp --dport 10888 -j RETURN
 iptables -t nat -A OUTPUT -p tcp --dport 53 -j RETURN
 iptables -t nat -A OUTPUT -p tcp -j REDIRECT --to-ports 12345
 
