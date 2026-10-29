@@ -25,8 +25,8 @@ iptables -F FORWARD
 # PREROUTING: redirect wlan0 traffic to xray
 iptables -t nat -A PREROUTING -d 192.168.4.1/32 -j RETURN
 iptables -t nat -A PREROUTING -d 127.0.0.0/8 -j RETURN
-iptables -t nat -A PREROUTING -p tcp --dport 12345 -j RETURN
-iptables -t nat -A PREROUTING -p tcp --dport 10808 -j RETURN
+iptables -t nat -A PREROUTING -p tcp --dport 54321 -j RETURN
+iptables -t nat -A PREROUTING -p tcp --dport 10888 -j RETURN
 iptables -t nat -A PREROUTING -i wlan0 -p tcp -j REDIRECT --to-ports 12345
 iptables -t nat -A PREROUTING -i wlan0 -p udp --dport 53 -j REDIRECT --to-ports 12345
 
