@@ -109,10 +109,10 @@ This folder (`v2ray2/`) is your **complete backup**. To restore to a new Pi:
 
 ```bash
 # Copy the folder to the new Pi
-scp -r v2ray2/ komil@NEW_PI_IP:~/
+scp -r v2ray2/ xxxxx@NEW_PI_IP:~/
 
 # SSH into the new Pi
-ssh komil@NEW_PI_IP
+ssh xxxxxx@NEW_PI_IP
 
 # Run the installer
 sudo bash ~/v2ray2/install.sh
